@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo DOM</title>
+</head>
+<body>
+    <h1>Iniciando os estudos em DOM</h1>
+    <p>testando </p>
+    <p>aprendendo a utilizar javascript</p>
+    <div id="msg">clique <strong>aqui</strong> ! ...</div>
+    <script>
+        var p = window.document.getElementsByTagName('p') [0]
+        window.document.write(p.innerText)
+        p.style.background= 'pink'
+        p.style.borderRadius = '5px'
+        p.style.color = 'white'
+
+        var d = window.document.querySelector('div#msg')
+        d.innerText= 'Estou aguardando'
+        d.style.background = 'pink'
+        msg.style.color = 'white'
+        
+
+
+    </script>
+</body>
+</html>
