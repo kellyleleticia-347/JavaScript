@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funções</title>
+    <style>
+        div{
+            background-color: rgb(138, 34, 60);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 18pt;
+            border: 2px solid rgb(77, 3, 31);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmousemove="mover()" onmouseout="sair()">
+        interaja...
+    </div>
+    <script>
+         var a = window.document.getElementById('area')
+        function clicar(){
+            a.innerText = 'clicou !!'
+        }
+        function mover(){
+            a.innerText= 'passo mouse !!'
+        }
+        function sair(){
+            a.innerText = ' tirou mouse !!'
+        }
+    </script>
+</body>
+</html>
