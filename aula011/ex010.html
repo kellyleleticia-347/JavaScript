@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body{
+            background-color: rgb(127, 240, 151);
+            color: rgb(20, 43, 28);
+            font: 700 18pt cambria;
+            
+        }
+        input {
+            background-color: rgb(187, 245, 209);
+            border: 2px solid;
+            color: rgb(7, 85, 39);
+            font: 900 15pt cambria;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando sua velocidade</h1>
+    velocidade do seu carro: <input type="number" name="tev" id="tev"> km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var tvel = window.document.getElementById('tev')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(tvel.value)
+        if (vel > 60){
+            res.innerHTML += `Você está sendo <strong> MULTADO </strong> por exesso de velocidade ! <br>`
+        }
+            
+            res.innerHTML += `Sua velocidade atual á de <strong>${vel}km/h !</strong> `
+        }
+    </script>
+</body>
+</html>
