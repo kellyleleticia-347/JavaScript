@@ -14,6 +14,12 @@ section{
    border-radius: 10px;
    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
+p{
+    padding: 10px;
+}
+div{
+    padding: 10px;
+}
 footer{
     text-align: center;
     font-style: italic;
